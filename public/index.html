@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgi Kartları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bilgi Kartları</h1>
+        <form id="card-form">
+            <label for="course">Ders:</label>
+            <input type="text" id="course" placeholder="Ders adı" required>
+            <label for="question">Soru:</label>
+            <input type="text" id="question" placeholder="Soruyu yazın" required>
+            <label for="answer">Cevap:</label>
+            <textarea id="answer" placeholder="Cevabı yazın" required></textarea>
+            <label for="difficulty">Zorluk Seviyesi:</label>
+            <select id="difficulty">
+                <option value="easy">Kolay</option>
+                <option value="medium">Orta</option>
+                <option value="hard">Zor</option>
+            </select>
+            <button type="submit">Kart Ekle</button>
+        </form>
+        <h2>Mevcut Kartlar</h2>
+        <ul id="cards"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
